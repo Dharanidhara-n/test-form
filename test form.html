@@ -4,30 +4,36 @@
     <title>Testing form</title>
 </head>
 <style>
-    fieldset{
-        width:600px;
-        height:800px;
-        text-align: center;
+    body{
+        margin:50px 0 50px 400px;
+        background-image: url("https://thumbs.dreamstime.com/b/tropical-beach-sea-landscape-36447235.jpg");
+        background-size: cover;
     }
-    input{
-        border:1px solid black;
-        width:100px;
-        height:10px;
+    fieldset{
+        width:fit-content;
+        text-align: left;
+        background-color:black;
+        opacity: 0.9;
+        color: ghostwhite;
+    }
+    div{
+        display: inline-block;
+        margin-right: 100px;
     }
 
 </style>
 <body>
     <form>
         <fieldset>
-            <h1>Application</h1>
-            <p>Please fill out the application form carefully</p>
+            <h1 style="text-align:center;">Application</h1>
+            <p style="text-align: center;">Please fill out the application form carefully</p>
             <table>
                 <tr>
                     <td>
-                        <label for="name">Full Name</label>
-                    </td>
-                    <td colspan="3">
-                        <input type="text" id="name">
+                       <label for="name">Full Name</label>
+                       </td>
+                    <td>
+                        <input type="text" id="name" style="width: 350px;">
                     </td>
                 </tr>
                 <tr>
@@ -35,7 +41,7 @@
                         <label for="father">Father Name</label>
                     </td>
                     <td>
-                        <input type="text" id="father">
+                        <input type="text" id="father" style="width: 350px;">
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +49,7 @@
                         <label for="mother">Mother Name</label>
                     </td>
                     <td>
-                        <input type="text" id="mother">
+                        <input type="text" id="mother" style="width: 350px;">
                     </td>
                 </tr>
                 <tr>
@@ -51,18 +57,18 @@
                         <label for="Dob">Date of Birth</label>
                     </td>
                         <td>
-                            <select>
-                            <option value="">--select--</option>
+                            <select style="width: 114px;">
+                            <option value=""></option>
                             <option value="">monday</option>
                             <option value="">tuesday</option>
                             <option value="">wednesday</option>
                             <option value="">thursday</option>
                             <option value="">friday</option>
+                            <option value="">Saturday</option>
+                            <option value="">Sunday</option>
                             </select>
-                        </td>
-                        <td>
-                            <select>
-                            <option value="">--select--</option>
+                            <select style="width: 114px;">
+                            <option value=""></option>
                             <option value="">Jan</option>
                             <option value="">Feb</option>
                             <option value="">Mar</option>
@@ -76,39 +82,13 @@
                             <option value="">Nov</option>
                             <option value="">Dec</option>
                             </select>
+                            <input type="number" id="num" placeholder="Enter Year" style="width: 115px;">
                         </td>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td>
-                            <select>
-                            <option value="">--select--</option>
-                            <option value="">2000</option>
-                            <option value="">2001</option>
-                            <option value="">2002</option>
-                            <option value="">2003</option>
-                            <option value="">2004</option>
-                            <option value="">2005</option>
-                            <option value="">2006</option>
-                            <option value="">2007</option>
-                            <option value="">2008</option>
-                            <option value="">2009</option>
-                            <option value="">2010</option>
-                            <option value="">2011</option>
-                            <option value="">2020</option>
-                            <option value="">2021</option>
-                            <option value="">2022</option>
-                            <option value="">2023</option>
-                            </select>
-                        </td>
-                        <tr>
-                            <td></td>
-            
-                        <td>
-                            <label for="">Day</label>
-                        </td>
-                        <td>
-                            <label for=>Month</label>
-                        </td>
-                        <td>
-                            <label for="">year</label>
+                            <div>Day</div><div>Month</div><div>year</div>
                         </td>
                     </tr>
                 <tr>
@@ -116,8 +96,8 @@
                         <label for="gender">Gender</label>
                     </td>
                     <td>
-                        <select>
-                            <option value="">--select--</option>
+                        <select style="width: 358px;">
+                            <option value=""></option>
                             <option value="">Male</option>
                             <option value="">Female</option>
                             <option value="">Others</option>
@@ -129,7 +109,7 @@
                         <label for="mail">E-Mail Address</label>
                     </td>
                     <td>
-                        <input type="email" id="mail">
+                        <input type="email" id="mail" style="width: 350px;">
                     </td>
                 </tr>
                 <tr>
@@ -137,7 +117,7 @@
                         <label for="number">Mobile Number</label>
                     </td>
                     <td>
-                        <input type="number" id="number">
+                        <input type="number" id="number" style="width: 350px;">
                     </td>
                 </tr>
                 <tr>
@@ -146,65 +126,61 @@
                     </td>
                     <td>
                         <input type="text" id="streetaddress">
-                    </td>
-                    <td>
+                        
+    
                         <input type="text" id="streetline">
+                        
                     </td>
-                    </tr>
-                    <tr>
-                        <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div>streetaddress</div> <div>streetLine 2</div>
 
-                    <td>
-                        <label for="streetaddress">Street Address</label>
-                    </td>
-                    <td>
-                        <label for="streetline">Street Line 2</label>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
                         <input type="text" id="city">
-                    </td>
-                    <td>
+                        
+            
                         <input type="text" id="state">
+                        
                     </td>
                 </tr>
                 <tr>
                     <td></td>
+                    <td>
+                        <div>CityName</div> <div>State</div>
 
-                <td>
-                    <label for="city">City</label>
-                </td>
-                <td>
-                    <label for="state">State/Province</label>
-                </td>
-            </tr>
+                    </td>
+                </tr>
             <tr>
                 <td></td>
                 <td>
                     <input type="number" id="code">
-                </td>
-                <td>
-                    <input type="text" id="country">
+                    
+                    
+        
+                    <input type="text" id="country"><br>
+                    
                 </td>
             </tr>
             <tr>
                 <td></td>
+                <td>
+                    <div>Postal/Zip Code</div>
+                    <div>Country</div>
 
-            <td>
-                <label for="code">Postal/Zip Code</label>
-            </td>
-            <td>
-                <label for="country">Country</label>
-            </td>
-        </tr>
+                </td>
+            </tr>
         <tr>
             <td>
                 <label for="course">Course Name</label>
             </td>
             <td>
-                <input type="text" id="course">
+                <input type="text" id="course" style="width: 350px;">
             </td>
         </tr>
         <tr>
@@ -212,8 +188,8 @@
                 <label for="edu">Type of Education</label>
             </td>
             <td>
-                <select>
-                    <option value="">--select--</option>
+                <select style="width: 358px;">
+                    <option value=""></option>
                     <option value="">SSLC</option>-</option>
                     <option value="">HSC</option>
                     <option value="">DEGREE</option>
@@ -225,16 +201,14 @@
                 <label for="DESCRIPTION">Course Description</label>
             </td>
             <td>
-                <textarea></textarea>
+                <textarea style="width: 350px;"></textarea>
             </td>
         </tr>
-
-
-
-
-            </table>
+        <tr>
+            
+          </table>
+          <p style="text-align: center;"><input type="submit" value="Apply Now" style="background-color: red;color:ghostwhite"></p>
         </fieldset>
     </form>
-    
 </body>
 </html>
